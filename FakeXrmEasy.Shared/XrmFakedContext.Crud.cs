@@ -422,10 +422,10 @@ namespace FakeXrmEasy
             }
 
             // Create specific validations
-            if (clone.Attributes.ContainsKey("statecode"))
-            {
-                throw new InvalidOperationException($"When creating an entity with logical name '{clone.LogicalName}', or any other entity, it is not possible to create records with the statecode property. Statecode must be set after creation.");
-            }
+            //if (clone.Attributes.ContainsKey("statecode"))
+            //{
+            //    throw new InvalidOperationException($"When creating an entity with logical name '{clone.LogicalName}', or any other entity, it is not possible to create records with the statecode property. Statecode must be set after creation.");
+            //}
 
             AddEntityWithDefaults(clone, false, this.UsePipelineSimulation);
 
